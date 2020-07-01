@@ -7,16 +7,16 @@ import Viz from './containers/Viz'
 function App() {
   return (
     <div>
-      <div className="flex-grid">
+      <div className="row">
         <Title />
       </div>
-      <div className="flex-grid">
+      <div className="row-two">
         <Gender />
       </div>
-      <div className="flex-grid">
+      <div className="row">
         <SearchBar />
       </div>
-      <div className="flex-grid">
+      <div className="row">
         <Viz />
       </div>
     </div>
