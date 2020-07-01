@@ -1,13 +1,24 @@
 import React from 'react';
+import Title from './containers/Title'
+import Gender from './containers/Gender'
+import SearchBar from './containers/SearchBar'
+import Viz from './containers/Viz'
 
 function App() {
   return (
     <div>
-      <header>
-        <h1>
-          Baby Name Blossoms!
-        </h1>
-      </header>
+      <div className="flex-grid">
+        <Title />
+      </div>
+      <div className="flex-grid">
+        <Gender />
+      </div>
+      <div className="flex-grid">
+        <SearchBar />
+      </div>
+      <div className="flex-grid">
+        <Viz />
+      </div>
     </div>
   );
 }

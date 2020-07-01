@@ -3,4 +3,19 @@
 * {
   box-sizing: border-box;
   font-family: 'Pangolin', monospace;
+  text-align: center;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.flex-grid .col {
+  flex: 1;
+}
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
 }
