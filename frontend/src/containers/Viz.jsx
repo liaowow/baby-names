@@ -3,17 +3,14 @@ import DrawFlowers from '../d3/DrawFlowers'
 
 export default function Viz() {
 
-	const data = require('../data/yob2018.json')
+	const data = require('../data/y2018.json')
 
 	useEffect(() => {
-		data.forEach(d => {
-			DrawFlowers(d.name, d.gender, d.count)
-		})
+		DrawFlowers(data)
 	})
 
 	return (
-		<div className="col">
-			<h3>This is Viz! Where magic happens</h3>
+		<div className="viz">
 		</div>
 	)
 }

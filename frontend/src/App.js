@@ -10,9 +10,6 @@ function App() {
       <div className="row">
         <Title />
       </div>
-      <div className="row-two">
-        <Gender />
-      </div>
       <div className="row">
         <SearchBar />
       </div>

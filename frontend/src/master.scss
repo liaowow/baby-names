@@ -14,9 +14,6 @@ body {
   display: flex;
   margin: 0 0 2rem 0;
   justify-content: space-between;
-}
-
-.col {
   background: rgb(248, 157, 147);
 }
 
@@ -24,22 +21,14 @@ body {
   flex: 1;
 }
 
-.row-two {
-  margin: 0 0 2rem 0;
-  justify-content: space-between;
-}
-
-.row-two .col {
-  display: inline-flex;
-  padding: 1em;
-  margin: 1em;
+.row .viz {
+  flex: 1;
 }
 
 @media screen and (max-width: 400px) {
-  .row,
-  .row-two {
+  .row {
     display: block;
-    .col {
+    .col, .viz {
       width: 100%;
       margin: 0 0 10px 0;
     }
