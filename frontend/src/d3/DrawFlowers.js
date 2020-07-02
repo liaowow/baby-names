@@ -34,8 +34,7 @@ export default function DrawFlowers(data) {
   const flowers = d3.select('svg')
     .selectAll('g')
     .data(flowersData).enter().append('g')
-    .attr('transform', (d, i) => `translate(${petalSize - 5}, ${petalSize - 55})`)
-    // .attr('transform', (d, i) => `translate(${(i % 5) * petalSize + 50}, ${Math.floor(i / 5) * petalSize + 50})`)
+    .attr('transform', (d, i) => `translate(${(i % 5) * petalSize + 150}, ${Math.floor(i / 5) * petalSize + 50})`)
 
   flowers.selectAll('path')
     .data(d => d.petals).enter().append('path')
@@ -44,8 +43,8 @@ export default function DrawFlowers(data) {
 
   flowers.append('text')
     .text(d => d.name)
-    .attr('x', petalSize - 5)
-    .attr('y', petalSize - 45)
+    .attr('x', -20)
+    .attr('y', petalSize - 50)
 
   return svg
 
