@@ -9,14 +9,12 @@ export default function Viz() {
 
 	useEffect(() => {
 		DrawFlowers(data)
-		console.log("inside useEffect")
 	}, [data])
 	
 	const handleDecadeChange = (e) => {
 		let year = e.target.value
 		let newData = require(`../data/d${year}.json`)
 		setData(newData)
-		console.log(data)
 	}
 	
 
@@ -25,7 +23,7 @@ export default function Viz() {
 			<h3>Select Decade</h3>
 			<button onClick={selectAll('svg').remove(), handleDecadeChange} value="1990">1990s</button>
 			<button onClick={selectAll('svg').remove(), handleDecadeChange} value="2000">2000s</button>
-			<button onClick={selectAll('svg').remove(), handleDecadeChange} value="2010">2010~2018</button>
+			<button onClick={selectAll('svg').remove(), handleDecadeChange} value="2010">2010s</button>
 			<div className="viz"></div>
 		</div>
 	)
