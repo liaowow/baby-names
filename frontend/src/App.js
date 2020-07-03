@@ -11,9 +11,6 @@ function App() {
         <Title />
       </div>
       <div className="row">
-        <SearchBar />
-      </div>
-      <div className="row">
         <Viz />
       </div>
     </div>

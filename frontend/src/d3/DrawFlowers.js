@@ -30,7 +30,7 @@ export default function DrawFlowers(data) {
     }
   })
 
-  // sprinkle flowers on the DOM!
+  // sprinkle petals on the DOM!
   const flowers = d3.select('svg')
     .selectAll('g')
     .data(flowersData).enter().append('g')
@@ -40,6 +40,7 @@ export default function DrawFlowers(data) {
     .data(d => d.petals).enter().append('path')
     .attr('d', d => d.petalPath)
     .attr('transform', d => `rotate(${d.angle})`)
+    .attr('fill', 'salmon')
 
   flowers.append('text')
     .text(d => d.name)

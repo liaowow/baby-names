@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Pangolin', monospace;
   text-align: center;
+  color: rgb(37, 37, 37);
 }
 
 body {
@@ -14,21 +15,41 @@ body {
   display: flex;
   margin: 0 0 2rem 0;
   justify-content: space-between;
-  background: rgb(248, 157, 147);
 }
 
 .row .col {
   flex: 1;
+  background: rgb(246, 184, 177);
 }
 
 .row .viz {
   flex: 1;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
+
+button {
+  width: 30%;
+  height: 10%;
+  padding: 10px;
+  margin: 5px;
+  border: 0;
+  border-radius: 30px;
+  font-size: 1em;
+  outline: none;
+}
+button:hover{
+  background: #262626c7;
+  color: white;
+  cursor: pointer;
+}
+
 
 @media screen and (max-width: 400px) {
   .row {
-    display: block;
     .col, .viz {
+      display: block;
       width: 100%;
       margin: 0 0 10px 0;
     }
