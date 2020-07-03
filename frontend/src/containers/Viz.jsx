@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import DrawFlowers from '../d3/DrawFlowers'
+import { selectAll } from 'd3'
 
 export default function Viz() {
 
@@ -22,9 +23,9 @@ export default function Viz() {
 	return (
 		<div className="col">
 			<h3>Select Decade</h3>
-			<button onClick={handleDecadeChange} value="1990">1990s</button>
-			<button onClick={handleDecadeChange} value="2000">2000s</button>
-			<button onClick={handleDecadeChange} value="2010">2010~2018</button>
+			<button onClick={selectAll('svg').remove(), handleDecadeChange} value="1990">1990s</button>
+			<button onClick={selectAll('svg').remove(), handleDecadeChange} value="2000">2000s</button>
+			<button onClick={selectAll('svg').remove(), handleDecadeChange} value="2010">2010~2018</button>
 			<div className="viz"></div>
 		</div>
 	)

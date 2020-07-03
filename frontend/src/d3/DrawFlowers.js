@@ -13,7 +13,7 @@ export default function DrawFlowers(data) {
                     .attr('width', '100%')
                     .attr('height', petalSize * 5)
   const countMinMax = d3.extent(data, d => d.count)
-  const numPetalScale = d3.scaleQuantize().domain(countMinMax).range([6, 8, 10, 12])
+  const numPetalScale = d3.scaleQuantize().domain(countMinMax).range([7, 10, 12, 15])
 
   // convert each dataset into flower scale
   const flowersData = _.map(data, d => {
@@ -41,6 +41,7 @@ export default function DrawFlowers(data) {
     .attr('d', d => d.petalPath)
     .attr('transform', d => `rotate(${d.angle})`)
     .attr('fill', 'salmon')
+    // .attr('stroke', 'salmon')
 
   flowers.append('text')
     .text(d => d.name)
