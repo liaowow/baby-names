@@ -1,14 +1,13 @@
 import _ from 'lodash'
 import * as d3 from 'd3'
 
-
 export default function DrawFlowers(data) {
   // draw petal
   const petalPath = 'M21.06,23.63s-4.67,4.2-11.39.16a12.58,12.58,0,0,1-5.47-7l3.41-1.18L7.05,12a12.19,12.19,0,0,1,8.39,1.27C19.4,15.64,21.59,20.06,21.06,23.63Z'
   const petalSize = 100
   // set up color scale
-  const petalColors = d3.scaleOrdinal().range(['#F7EFDC', '#EAE3BE', '#EFCB64', '#F8765C', '#E44F5D'])
-  const vowels = ['a', 'e', 'i', 'o', 'u']
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+  const petalColors = d3.scaleOrdinal().range(['#E44F5D', '#F6B06E', '#EFCB64', '#F8765C', '#E5D35F', '#85DA6D'])
   petalColors.domain(vowels)
 
   // set up svg and connect data
@@ -75,5 +74,4 @@ export default function DrawFlowers(data) {
     .attr('y', petalSize - 50)
 
   return svg
-
 }

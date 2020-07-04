@@ -16,6 +16,13 @@ h5 {
 
 }
 
+a {
+  color: salmon;
+}
+a:hover {
+  text-decoration: none;
+}
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -23,7 +30,6 @@ h5 {
 
 .row .col {
   flex: 1;
-  background: white;
 }
 
 .row .viz {

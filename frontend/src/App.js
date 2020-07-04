@@ -1,7 +1,5 @@
 import React from 'react';
 import Title from './containers/Title'
-import Gender from './containers/Gender'
-import SearchBar from './containers/SearchBar'
 import Viz from './containers/Viz'
 
 function App() {
