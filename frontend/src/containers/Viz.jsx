@@ -19,7 +19,7 @@ export default function Viz() {
 	
 
 	return (
-		<div className="col">
+		<div>
 			<h3>Select Decade</h3>
 			<button onClick={selectAll('svg').remove(), handleDecadeChange} value="1920">1920s</button>
 			<button onClick={selectAll('svg').remove(), handleDecadeChange} value="1930">1930s</button>

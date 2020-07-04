@@ -13,7 +13,7 @@ export default function DrawFlowers(data) {
   // set up svg and connect data
   const svg = d3.select('.viz')
                   .append('svg')
-                    .attr('width', '100%')
+                    .attr('width', 800)
                     .attr('height', petalSize * 5)
   const countMinMax = d3.extent(data, d => d.count)
   const numPetalScale = d3.scaleQuantize().domain(countMinMax).range([7, 10, 12, 15, 20])
@@ -39,7 +39,7 @@ export default function DrawFlowers(data) {
   const flowers = d3.select('svg')
     .selectAll('g')
     .data(flowersData).enter().append('g')
-    .attr('transform', (d, i) => `translate(${(i % 5) * petalSize + 150}, ${Math.floor(i / 5) * petalSize + 80})`)
+    .attr('transform', (d, i) => `translate(${(i % 5) * petalSize + 200}, ${Math.floor(i / 5) * petalSize + 80})`)
 
   flowers.selectAll('path')
     .data(d => d.petals).enter().append('path')
