@@ -3,7 +3,7 @@ import * as d3 from 'd3'
 export default function DrawLegend() {
   // set up color scale
   const vowels = ['a', 'e', 'i', 'o', 'u', 'y']
-  const petalColors = d3.scaleOrdinal().range(['#E5D35F', '#F6B06E', '#EFCB64', '#F8765C', '#E44F5D', '#85DA6D'])
+  const petalColors = d3.scaleOrdinal().range(['#E44F5D', '#F6B06E', '#EFCB64', '#F8765C', '#E5D35F', '#1DDCCA'])
   petalColors.domain(vowels)
 
   // set up svg

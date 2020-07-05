@@ -1,5 +1,6 @@
 import React from 'react';
 import Title from './containers/Title'
+import Legend from './containers/Legend'
 import Viz from './containers/Viz'
 
 function App() {
@@ -7,6 +8,9 @@ function App() {
     <div>
       <div className="row">
         <Title />
+      </div>
+      <div className="row">
+        <Legend />
       </div>
       <div className="row">
         <Viz />
