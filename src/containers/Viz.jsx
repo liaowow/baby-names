@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import DrawFlowers from '../d3/DrawFlowers'
-import legend from '../img/legend.svg'
 import { selectAll } from 'd3'
 
 export default function Viz() {
